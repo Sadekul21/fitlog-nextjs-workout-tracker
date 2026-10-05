@@ -1,26 +1,41 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --fitlog-bg: #0d0f0f;
+  --fitlog-card: #171a1a;
+  --fitlog-border: #2a2e2e;
+  --fitlog-accent: #ccff00;
+  --fitlog-muted: #9ca3af;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: var(--fitlog-bg);
+  color: white;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+a {
+  transition: all 0.2s ease;
+}
+
+.fitlog-container {
+  width: min(1200px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.fitlog-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
 }
