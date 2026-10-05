@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import Navbar from "@/components/shared/Navbar";
 import AppProvider from "@/providers/AppProviders";
+import Footer from "@/components/shared/Footer";
 
 export const metadata: Metadata = {
   title: "FitLog",
@@ -25,7 +26,7 @@ export default function RootLayout({
 
           <main>{children}</main>
 
-          
+          <Footer />
         </AppProvider>
       </body>
     </html>
