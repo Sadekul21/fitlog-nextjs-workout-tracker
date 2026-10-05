@@ -1,10 +1,10 @@
+import Hero from "@/components/home/Hero";
+
 const HomePage = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-3xl font-bold">
-        FitLog
-      </h1>
-    </div>
+    <>
+      <Hero />
+    </>
   );
 };
 

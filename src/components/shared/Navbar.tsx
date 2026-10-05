@@ -55,7 +55,7 @@ const Navbar = () => {
                   : "text-gray-300 hover:text-white"
               }
             >
-              Workout
+              Workouts
             </Link>
 
             <Link
